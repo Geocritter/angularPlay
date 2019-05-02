@@ -1,0 +1,26 @@
+/* Application-wide Styles */
+@font-face {
+  font-family: overwatch;
+  src: url(https://us.battle.net/forums/static/fonts/f014015d/f014015d.woff);
+}
+h1 {
+  color: #DAA520;
+  font-family: overwatch;
+  font-size: 450%;
+}
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+}
+body, input[type="text"], button {
+  color: #888;
+  font-family: Cambria, Georgia;
+}
+/* everywhere else */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
