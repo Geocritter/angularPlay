@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Hero } from '../hero';
+import { HEROES } from '../mock-heroes';
 
 @Component({
   selector: 'app-heroes',
@@ -6,8 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
+  heroes = HEROES;
+  selectedHero: Hero;
 
-  constructor() { }
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
+  }
+  audio = new Audio();
+  playAudio(song: string) {
+    this.audio.src = song
+    this.audio.load();
+    this.audio.play();
+  }
+  constructor() {
+
+  }
 
   ngOnInit() {
   }

@@ -7,12 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'Tour of Heroes';
-  playAudio() {
-    let audio = new Audio();
-    audio.src = "assets/proofofhero.mp3";
-    audio.load();
-    audio.play();
-  }
+  
   ngOnInit() {
   }
 }
